@@ -1,30 +1,22 @@
-select * from amit_sachin_scores
+----------------------------------------------------------------------------------------
+-- Warm Greetings from Mentorskool!
+-- We design thought provoking scenarios to help you sharpen your SQL skills 
+-- For more challenging scenarios across Data Analytics/Engineering and Sciences visit our website at : mentorskool.com
+-- So, ready to analyze our Master Blaster Sachin's ODI performances?
+-- Here you go!
+
+
 
 -- Scenario 1
 -- write a query to extract dismissal types from dismissal_mode column
 -- required values for the dismissal_type column
 -- caught, bowled, did not bat, hit wicket, lbw, not out, retired hurt, run out and stumped
 
-select *,
-case when dismissal_type = 'c' then 'caught'
-	 when dismissal_type = 'b' then 'bowled'
-	 when dismissal_type = 'did' then 'did not bat'
-	 when dismissal_type = 'hit' then 'hit wicket'
-	 when dismissal_type = 'lbw' then 'lbw'
-	 when dismissal_type = 'not' then 'not out'
-	 when dismissal_type = 'retired' then 'retired hurt'
-	 when dismissal_type = 'run' then 'run out' else 'stumped' end as dismissal_type
-from (	  
-select *,
-left(dismissal_mode,charindex(' ',dismissal_mode)-1) as dismissal_type
-from amit_sachin_scores
-) as t
 
-select * from amit_sachin_scores
-order by mtch_date
 
 -- Scenario 2
 -- Write a query to calculate strike rate for every innings played by Sachin
+
 
 
 -- Scenario 3
@@ -37,15 +29,18 @@ order by mtch_date
 -- and so on...
 
 
+
 -- Scenario 4
 -- Write a query to calculate average frequency of making centuries by Sachin
 -- In other words you need to find out on an average how many days Sachin took to hit a century in his career
+
 
 
 -- Scenario 5
 -- Write a query to list down all the milestone matches of Sachin
 -- What is a milestone match?
 -- Matches in which he crossed 1000,2000,3000..............10000,....18000 etc.
+
 
 
 -- Scenario 6
