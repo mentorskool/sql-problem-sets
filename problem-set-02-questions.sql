@@ -28,7 +28,6 @@
 
 
 -- Q5) Show sales by year and month and then 
--- filter the result for last 3 months of 2017
 -- Output format : 
 -----------------------
 -- Month-Year | Sales 
@@ -37,8 +36,7 @@
 
 
 
--- Q6) What change will you do in the query to fetch the same data as above
--- for last 6 months and last 12 months?
+-- Q6) What change will you do in the query to fetch the same data for last 3 months?
 
 
 
@@ -89,11 +87,20 @@
 ----------------------------------------
 
 
--- Q10) Calculate the no. of words in review text
+-- Q10) Write an SQL query to create the following outcome in orders table : 
+-- Output format : 
+--------------------------------------------------------------
+-- OrderID         | CustomerID | Order Purchase Date | Week
+--------------------------------------------------------------
+-- CA-2014-101147  | AB-10105   | 2017-12-13 22:28    | 10-Dec To 16-Dec
 
 
 
-/** Q11) The category managers have a goal of rewarding sub-category
+-- Q11) Write a query to print the no. of words in review text (customer_reviews)
+
+
+
+/** Q12) The category managers have a goal of rewarding sub-category
 managers under them based on which sub-category profit margins are better than
 overall profit margin of the category
 Which sub-category managers should be rewarded?
@@ -102,7 +109,7 @@ Which sub-category managers should be rewarded?
 
 
 
-/** Q12 : Consider the following logic : 
+/** Q13 : Consider the following logic : 
  A product can be purchased by a customer on EMI. An EMI of 1 means the customer paid the amount in just a single 
  installment. A value of 24 means a customer paid the amount over the period of 12 months
 
@@ -125,4 +132,3 @@ Which sub-category managers should be rewarded?
 Ex. For Furniture if % of transactions made under Short_Term is < 50%, it needs to be reported
 
 **/
-
